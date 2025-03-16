@@ -23,6 +23,25 @@
             min-height: 100vh;
         }
 
+    .action-button {
+        width: 100%;
+        background: var(--gradient-secondary);
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 10px;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+      }
+        
         #blur-layer {
             position: absolute;
             top: 0;
@@ -220,7 +239,7 @@
         <div class="shape input-section">
             <h1>Downloader Tiktok</h1>
             <input type="text" id="url" placeholder="Masukkan tautan TikTok di sini">
-            <button onclick="downloadVideo()">Unduh Video</button>
+            <button class="action-button" onclick="downloadVideo()">Unduh Video</button>
         </div>
 
         <!-- Shape 2: Username & Nickname -->
@@ -242,8 +261,8 @@
             <p class="hashtags" id="hashtags"></p>
             <div class="button-group">
                 <button id="copy-hashtags" style="display: none;" onclick="copyHashtags()">Salin Hashtag</button>
-                <button id="download-video" style="display: none;">Unduh Video</button>
-                <button id="download-audio" style="display: none;">Unduh Audio</button>
+                <button class="action-button" id="download-video" style="display: none;">Unduh Video</button>
+                <button class="action-button" id="download-audio" style="display: none;">Unduh Audio</button>
             </div>
         </div>
   
