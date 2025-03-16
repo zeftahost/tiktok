@@ -206,6 +206,11 @@
             transform-origin: top right;
         }
 
+       .title {
+           font-size: 24px;
+           color: orange;
+       }
+        
         @keyframes tlbr {
             0% {transform: rotate(0);}
             20% {transform: rotate(90deg);}
@@ -233,7 +238,7 @@
     <div class="container">
         <!-- Shape 1: Input & Download Button -->
         <div class="shape input-section">
-            <h1>Downloader Tiktok</h1>
+            <h1 class="title">Downloader Tiktok</h1>
             <input type="text" id="url" placeholder="Masukkan tautan TikTok di sini">
             <button class="action-button" onclick="downloadVideo()">Unduh Video</button>
         </div>
